@@ -11,8 +11,6 @@ BASE_PATH = "election"
 RABBITMQ_URL = os.getenv("RABBITMQ_URL") or 'amqp://user:password@localhost:5672'
 ZOOKEEPER_URL = os.getenv("ZOOKEEPER_URL") or '127.0.0.1:2181'
 
-print(ZOOKEEPER_URL)
-print(RABBITMQ_URL)
 
 def addTaskToQueue():
     parameters = pika.URLParameters(RABBITMQ_URL)
