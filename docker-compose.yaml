@@ -15,34 +15,34 @@ services:
     ports:
       - 2181:2181
 
-  # worker-1:
-  #   image: distributed-systems
-  #   environment:
-  #     - RABBITMQ_URL=amqp://user:password@rabbitmq:5672
-  #     - ZOOKEEPER_URL=zookeeper:2181
-  #     - PYTHONUNBUFFERED=1
-  #   depends_on:
-  #     - zookeeper
-  #     - rabbitmq
+  worker-1:
+    image: distributed-systems
+    environment:
+      - RABBITMQ_URL=amqp://user:password@rabbitmq:5672
+      - ZOOKEEPER_URL=zookeeper:2181
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - zookeeper
+      - rabbitmq
 
-  # worker-2:
-  #   image: distributed-systems
-  #   environment:
-  #     - RABBITMQ_URL=amqp://user:password@rabbitmq:5672
-  #     - ZOOKEEPER_URL=zookeeper:2181
-  #     - PYTHONUNBUFFERED=1
-  #   depends_on:
-  #     - zookeeper
-  #     - rabbitmq
+  worker-2:
+    image: distributed-systems
+    environment:
+      - RABBITMQ_URL=amqp://user:password@rabbitmq:5672
+      - ZOOKEEPER_URL=zookeeper:2181
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - zookeeper
+      - rabbitmq
   
-  # worker-3:
-  #   image: distributed-systems
-  #   environment:
-  #     - RABBITMQ_URL=amqp://user:password@rabbitmq:5672
-  #     - ZOOKEEPER_URL=zookeeper:2181
-  #     - PYTHONUNBUFFERED=1
-  #   depends_on:
-  #     - zookeeper
-  #     - rabbitmq
+  worker-3:
+    image: distributed-systems
+    environment:
+      - RABBITMQ_URL=amqp://user:password@rabbitmq:5672
+      - ZOOKEEPER_URL=zookeeper:2181
+      - PYTHONUNBUFFERED=1
+    depends_on:
+      - zookeeper
+      - rabbitmq
 
 
