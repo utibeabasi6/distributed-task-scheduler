@@ -1,5 +1,5 @@
 # Distributed task scheduler
----
+
 This repository contains the code for a basic distributed task scheduler built in python
 
 ## How it works
