@@ -33,7 +33,7 @@ services:
 #       - PYTHONUNBUFFERED=1
 #     depends_on:
 #       - zookeeper
-      - rabbitmq
+#       - rabbitmq
   
 #   worker-3:
 #     image: distributed-systems
